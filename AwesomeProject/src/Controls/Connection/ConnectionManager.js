@@ -1,4 +1,6 @@
 module.exports = class ConnectionManager {
+  // TODO: if is a connection manager
+  //       should implements Singleton
   constructor(url) {
     this.url_address = url;
   }

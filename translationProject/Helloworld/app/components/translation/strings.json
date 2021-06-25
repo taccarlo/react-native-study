@@ -1,0 +1,17 @@
+{
+    "italian":[
+    {
+        "appName": "Lista di cose da fare",
+        "add":"Aggiungi",
+        "enterHere":"Scrivi qui i tuoi appunti"
+    }
+    ],
+    "english":[
+        {
+        "appName": "To do list",
+        "add":"Add",
+        "enterHere":"Enter here your notes"
+        }
+    ]
+
+}

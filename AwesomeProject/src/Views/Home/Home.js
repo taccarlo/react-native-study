@@ -1,12 +1,18 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Button, Alert} from 'react-native';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View>
       <Text>Home</Text>
+      <Button onPress={() => onPress(navigation)} title="Go To Page" />
     </View>
   );
 };
+
+function onPress(navigation) {
+  Alert.alert('ciao');
+  navigation.navigate('Profile');
+}
 
 export default Home;

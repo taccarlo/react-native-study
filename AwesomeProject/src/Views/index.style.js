@@ -9,4 +9,8 @@ export default StyleSheet.create({
     textAlign: 'center',
     marginVertical: 8,
   },
+  tinyLogo: {
+    width: 50,
+    height: 50,
+  },
 });

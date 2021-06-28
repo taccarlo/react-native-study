@@ -1,4 +1,12 @@
-
+### REACT NATIVE STUDY
+  This project it's a basic structure of a good project in react native.
+  It's written in modular and scalable way.
+  The style is separated from the js module.
+  The constants (colors, image paths..) are separated in specific directory.
+  The strings are content in a json file.
+  There is a class that implements a basic structure of a manager of a db connection for example.
+  In __tests__ is present a test section using jest.
+  
 ### package.json content
 
   ##reinstalling libraries:

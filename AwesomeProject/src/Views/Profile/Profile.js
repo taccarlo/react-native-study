@@ -1,21 +1,20 @@
 import {images} from '../../Models/Constants';
 import React from 'react';
-import {Image, View, Text} from 'react-native';
+import {SafeAreaView, Image, View, Text} from 'react-native';
+
+import style from '../index.style';
+import styleProfile from './Profile.style';
+import strings from '../../Models/Constants/strings.json';
 
 const Profile = () => {
+  let str = strings.Profile[0];
   return (
-    <View style={{flexDirection: 'row'}}>
-      <Text>Profile</Text>
-
-      <Image
-        source={require('../../../assets/GTSA-logo.png')} //images.GTSA_logo}
-        style={{
-          margin: 5,
-          resizeMode: 'stretch',
-          height: 200,
-        }}
-      />
-    </View>
+    <SafeAreaView style={style.container}>
+      <View>
+        <Text style={style.title}>{str.profile}</Text>
+        <Image source={images.GTSA_logo} style={styleProfile.imageInProfile} />
+      </View>
+    </SafeAreaView>
   );
 };
 

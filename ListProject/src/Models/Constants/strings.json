@@ -1,0 +1,14 @@
+{
+    "Home":[
+        {
+            "home": "Home Screen",
+            "goPage":"Go to page",
+            "text1":"This text is just in Home View."
+        }
+    ],
+    "Profile":[
+        {
+            "profile": "Profile Screen"
+        }
+    ]
+}

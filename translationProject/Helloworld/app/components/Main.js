@@ -59,13 +59,6 @@ export default class Main extends React.Component {
   }
 
   addnote() {
-    /* 
-     console.log("Add Note Button Pressed");
-     console.error("errore");
-     console.warn("attenzione");
-     console.debug("debug");
-     alert("add"); 
-    */
     if (this.state.noteText) {
       var d = new Date();
       this.state.noteArray.push(
@@ -79,6 +72,7 @@ export default class Main extends React.Component {
       this.setState({ noteText: '' });
     }
   }
+  
   deleteNote(key) {
     this.state.noteArray.splice(key, 1);
     this.setState({ noteArray: this.state.noteArray })

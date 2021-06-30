@@ -1,41 +1,25 @@
 import React from 'react';
-import {ScrollView, SafeAreaView, View, Text, Button} from 'react-native';
+import {
+  Alert,
+  ScrollView,
+  SafeAreaView,
+  View,
+  Text,
+  Button,
+} from 'react-native';
 import stylesHome from './Home.style';
 import styles from '../index.style';
 import onPress from './HomeManager';
 import strings from '../../Models/Constants/strings.json';
 import Note from './Components/Note';
+import dummyValues from '../../Models/Constants/dummyValues.json';
 
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
 
-    let d = new Date();
     this.state = {
-      noteList: [
-        {
-          date: d.getFullYear() + '/' + (d.getMonth() + 1) + '/' + d.getDate(),
-          note: 'ciao',
-        },
-        {
-          date:
-            d.getFullYear() +
-            '/' +
-            (d.getMonth() + 1) +
-            '/' +
-            (d.getDate() + 1),
-          note: 'ciao 2',
-        },
-        {
-          date:
-            d.getFullYear() +
-            '/' +
-            (d.getMonth() + 1) +
-            '/' +
-            (d.getDate() + 2),
-          note: 'ciao 3',
-        },
-      ],
+      noteList: dummyValues.dummyNotes,
     };
   }
 
@@ -66,13 +50,14 @@ export default class Home extends React.Component {
           key={key}
           keyval={key}
           val={val}
-          deleteMethod={() => this.deleteNote(key)}
+          deleteMethod={() => this.deleteNote(key, val)}
         />
       );
     });
   };
 
-  deleteNote = (key) => {
+  deleteNote = (key, val) => {
+    Alert.alert('Nota ' + val.note + ' correttamente eliminata.');
     this.state.noteList.splice(key, 1);
     this.setState({noteList: this.state.noteList});
   };

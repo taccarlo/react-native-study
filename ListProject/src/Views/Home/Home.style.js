@@ -4,4 +4,9 @@ export default StyleSheet.create({
     textAlign: 'center',
     color: 'blue',
   },
+
+  scrollContainerHome: {
+    flex: 1,
+    marginBottom: 100,
+  },
 });

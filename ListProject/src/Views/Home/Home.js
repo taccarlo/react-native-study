@@ -61,4 +61,20 @@ export default class Home extends React.Component {
     this.state.noteList.splice(key, 1);
     this.setState({noteList: this.state.noteList});
   };
+  addNote = (val) => {
+    /*
+    if (this.state.noteText) {
+      var d = new Date();
+      this.state.noteArray.push(
+        {
+          'date': d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate(),
+          'note': this.state.noteText
+        }
+      );
+      var newNoteArray = this.state.noteArray;
+      this.setState({ noteArray: newNoteArray })
+      this.setState({ noteText: '' });
+    }
+  */
+  };
 }

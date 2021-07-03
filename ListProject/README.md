@@ -28,6 +28,12 @@
   ```
   npm install @react-navigation/stack
   ```
+
+  for bottom navigation:    
+  ```
+  npm install @react-navigation/bottom-tabs
+  ```
+
   *AFTER*
   remove package lock
   remove node modules

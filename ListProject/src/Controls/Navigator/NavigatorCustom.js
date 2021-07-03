@@ -3,7 +3,8 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
-import {Home, Profile} from '../../Views';
+import Tabs from './Tabs';
+import {Profile} from '../../Views';
 import {COLORS} from '../../Models/Constants';
 
 function NavigatorCustom() {
@@ -22,7 +23,7 @@ function NavigatorCustom() {
           },
         }}
         initialRouteName={'Home'}>
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={Tabs} />
         <Stack.Screen name="Profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
